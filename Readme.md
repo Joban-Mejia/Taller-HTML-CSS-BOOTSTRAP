@@ -13,4 +13,4 @@ Para ver el proyecto en tu propio entorno, sigue estos pasos:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/jujutsu-kaisen-page.git
+   git clone https://github.com/Joban-Mejia/Taller-HTML-CSS-BOOTSTRAP.git
