@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif; /* Cambiar la fuente a una más legible */
+    font-family: Arial, sans-serif;
     margin: 0; /* Eliminar el margen por defecto */
     padding: 0; /* Eliminar el padding por defecto */
 }
@@ -18,7 +18,7 @@ h1 {
 }
 
 #titulo-cards{
-    color: white; /* Color del texto */
+    color: white;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -73,6 +73,6 @@ img {
 /* Espaciado adicional para pantallas pequeñas */
 @media (max-width: 576px) {
     .card {
-        margin-bottom: 15px; /* Menos espacio en pantallas pequeñas */
+        margin-bottom: 15px;
     }
 }
