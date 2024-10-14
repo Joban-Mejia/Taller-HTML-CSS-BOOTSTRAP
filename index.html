@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="./images/Icono.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link href="Styles.css" rel="stylesheet">
     <title>Jujutsu Page</title>
 </head>
@@ -46,7 +52,7 @@
         <!-- Fila para las cards -->
         <div class="row justify-content-center">
             <div class="col-md-4 col-sm-6 col-12 mb-4">
-                <div class="card">
+                <div class="card" data-audio="./Audio/Gojo.ogg" onclick="playAudio(this)">
                     <img src="./images/Satoru1.jpg" class="card-img-top" alt="Satoru Gojo" class="img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Satoru Gojo</h5>
@@ -115,7 +121,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12 mb-4">
-                <div class="card">
+                <div class="card" data-audio="./Audio/Toji.ogg" onclick="playAudio(this)">
                     <img src="./images/Toji1.jpg" class="card-img-top" alt="Toji Fushiguro" class="img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Toji Fushiguro</h5>
@@ -134,22 +140,22 @@
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                    data-bs-toggle="list" href="#list-home" role="tab"
+                                    data-bs-toggle="list" href="#toji-home" role="tab"
                                     aria-controls="list-home">Habilidades Principales</a>
                                 <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                    data-bs-toggle="list" href="#list-profile" role="tab"
+                                    data-bs-toggle="list" href="#toji-profile" role="tab"
                                     aria-controls="list-profile">Cuerpo Mejorado</a>
                                 <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                    data-bs-toggle="list" href="#list-messages" role="tab"
+                                    data-bs-toggle="list" href="#toji-messages" role="tab"
                                     aria-controls="list-messages">Manipulación de Maldiciones</a>
                                 <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                    data-bs-toggle="list" href="#list-settings" role="tab"
+                                    data-bs-toggle="list" href="#toji-settings" role="tab"
                                     aria-controls="list-settings">Inmunidad a Maldiciones</a>
                             </div>
                         </div>
                         <div class="col-8">
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                <div class="tab-pane fade show active" id="toji-home" role="tabpanel"
                                     aria-labelledby="list-home-list">
                                     <h3>Habilidades Principales</h3>
                                     <p>Toji Fushiguro es un asesino excepcional con habilidades físicas sobresalientes y
@@ -160,20 +166,20 @@
                                         <li>Inmunidad a las Maldiciones</li>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                <div class="tab-pane fade" id="toji-profile" role="tabpanel"
                                     aria-labelledby="list-profile-list">
                                     <h3>Cuerpo Mejorado</h3>
                                     <p>A través de entrenamiento extremo, Toji tiene un cuerpo más allá de las
                                         capacidades humanas normales, con fuerza, velocidad y reflejos superiores, lo
                                         que lo convierte en un oponente letal en combate.</p>
                                 </div>
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                <div class="tab-pane fade" id="toji-messages" role="tabpanel"
                                     aria-labelledby="list-messages-list">
                                     <h3>Manipulación de Maldiciones</h3>
                                     <p>A pesar de no poseer energía maldita propia, Toji utiliza herramientas malditas y
                                         maldiciones almacenadas, permitiéndole luchar contra hechiceros poderosos.</p>
                                 </div>
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                <div class="tab-pane fade" id="toji-settings" role="tabpanel"
                                     aria-labelledby="list-settings-list">
                                     <h3>Inmunidad a Maldiciones</h3>
                                     <p>Toji es completamente inmune a las maldiciones, lo que significa que no puede ser
@@ -185,7 +191,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12 mb-4">
-                <div class="card">
+                <div class="card" data-audio="./Audio/Geto.ogg" onclick="playAudio(this)">
                     <img src="./images/Suguru1.jpg" class="card-img-top" alt="Suguru Geto" class="img-fluid">
                     <div class="card-body">
                         <h5 class="card-title">Suguru Geto</h5>
@@ -203,50 +209,42 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list"
-                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Habilidades
+                            <a class="list-group-item list-group-item-action active" id="geto-home-list"
+                                data-bs-toggle="list" href="#geto-home" role="tab" aria-controls="geto-home">Habilidades
                                 Principales</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                data-bs-toggle="list" href="#list-profile" role="tab"
-                                aria-controls="list-profile">Control de Maldiciones</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                data-bs-toggle="list" href="#list-messages" role="tab"
-                                aria-controls="list-messages">Absorción de Maldiciones</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                data-bs-toggle="list" href="#list-settings" role="tab"
-                                aria-controls="list-settings">Técnicas de Maldición Masiva</a>
+                            <a class="list-group-item list-group-item-action" id="geto-profile-list"
+                                data-bs-toggle="list" href="#geto-profile" role="tab"
+                                aria-controls="geto-profile">Control de Maldiciones</a>
+                            <a class="list-group-item list-group-item-action" id="geto-messages-list"
+                                data-bs-toggle="list" href="#geto-messages" role="tab"
+                                aria-controls="geto-messages">Absorción de Maldiciones</a>
+                            <a class="list-group-item list-group-item-action" id="geto-settings-list"
+                                data-bs-toggle="list" href="#geto-settings" role="tab"
+                                aria-controls="geto-settings">Técnicas de Maldición Masiva</a>
                         </div>
                     </div>
                     <div class="col-8">
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
-                                aria-labelledby="list-home-list">
+                            <div class="tab-pane fade show active" id="geto-home" role="tabpanel" aria-labelledby="geto-home-list">
                                 <h3>Habilidades Principales</h3>
-                                <p>Suguru Geto es un hechicero de clase especial y maestro en el uso de maldiciones. Sus
-                                    habilidades incluyen:</p>
+                                <p>Suguru Geto es un hechicero de clase especial y maestro en el uso de maldiciones. Sus habilidades incluyen:</p>
                                 <ul>
                                     <li>Control de Maldiciones</li>
                                     <li>Absorción de Maldiciones</li>
                                     <li>Técnicas de Maldición Masiva</li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                aria-labelledby="list-profile-list">
+                            <div class="tab-pane fade" id="geto-profile" role="tabpanel" aria-labelledby="geto-profile-list">
                                 <h3>Control de Maldiciones</h3>
-                                <p>Suguru puede controlar maldiciones, usándolas para atacar a sus enemigos o
-                                    protegerse, y siempre tiene varias maldiciones bajo su mando.</p>
+                                <p>Suguru puede controlar maldiciones, usándolas para atacar a sus enemigos o protegerse, y siempre tiene varias maldiciones bajo su mando.</p>
                             </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                aria-labelledby="list-messages-list">
+                            <div class="tab-pane fade" id="geto-messages" role="tabpanel" aria-labelledby="geto-messages-list">
                                 <h3>Absorción de Maldiciones</h3>
-                                <p>Geto tiene la capacidad de absorber maldiciones derrotadas y agregarlas a su arsenal,
-                                    haciéndose más poderoso con cada batalla.</p>
+                                <p>Geto tiene la capacidad de absorber maldiciones derrotadas y agregarlas a su arsenal, haciéndose más poderoso con cada batalla.</p>
                             </div>
-                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                aria-labelledby="list-settings-list">
+                            <div class="tab-pane fade" id="geto-settings" role="tabpanel" aria-labelledby="geto-settings-list">
                                 <h3>Técnicas de Maldición Masiva</h3>
-                                <p>Con su habilidad para controlar maldiciones a gran escala, Geto puede invocar
-                                    múltiples maldiciones simultáneamente, abrumando a sus enemigos en combate.</p>
+                                <p>Con su habilidad para controlar maldiciones a gran escala, Geto puede invocar múltiples maldiciones simultáneamente, abrumando a sus enemigos en combate.</p>
                             </div>
                         </div>
                     </div>
@@ -255,11 +253,11 @@
         </div>
     </div>
     <!-- Formulario de suscripción -->
-    <h2 id="titulo-cards">SUSCRIBETE</h2>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="mb-3">
+                    <h2 id="titulo-cards">SUSCRIBETE</h2>
                     <label for="exampleFormControlInput1" class="form-label">Dirreción de Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com">
@@ -267,6 +265,14 @@
             </div>
         </div>
     </div>
+
+
+    <script src="audio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybFW5DFl9R8fNXf8mjVn0y5lUvZ1+Vka5RaM6jBi3/ogPfl8D"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/0/9N+6YVd3c0/d0tD8W5nI81h2u5uL+I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
