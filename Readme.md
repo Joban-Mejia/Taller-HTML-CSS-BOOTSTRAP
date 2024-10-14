@@ -1,5 +1,7 @@
 # Jujutsu Kaisen Page
 
+![Logo](./images/Banner.jpg)
+
 ## Descripción
 Este proyecto es un taller sobre HTML, CSS y Bootstrap, donde se crea una página web dedicada a la popular serie de manga y anime "Jujutsu Kaisen". La página presenta información sobre la serie, sus personajes principales y utiliza técnicas de diseño responsive.
 

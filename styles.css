@@ -11,6 +11,13 @@ h1 {
     margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
 
+h3 {
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
 #descripcion-principal {
     color: white;
     margin-bottom: 15px; /* Espacio debajo de la descripción */
@@ -68,6 +75,16 @@ img {
     filter: blur(4px); /* Aumentar el desenfoque */
 }
 
+.tab-content{
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente para las tarjetas */
+    border: none; /* Sin borde para un look más limpio */
+    color: white;
+}
+
+.list-group{
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente para las tarjetas */
+}
 
 
 /* Espaciado adicional para pantallas pequeñas */

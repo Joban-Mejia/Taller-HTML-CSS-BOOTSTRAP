@@ -1,75 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-            <link rel="icon" href="./images/Icono.png">
-        <link href="Styles.css" rel="stylesheet">
-        <title>Jujutsu Page</title>
-    </head>
-    <body>
-        <div class="blur-background"></div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <img src="./images/Gokumon.png" alt="" class="img-fluid">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./images/Icono.png">
+    <link href="Styles.css" rel="stylesheet">
+    <title>Jujutsu Page</title>
+</head>
+
+<body>
+    <div class="blur-background"></div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <img src="./images/Gokumon.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-8 col-12">
+                <h1>JUJUTSU KAISEN</h1>
+                <p id="descripcion-principal">Jujutsu Kaisen es una popular serie de manga y anime japonesa creada por
+                    Gege Akutami. La historia se desarrolla en un mundo amenazado por maldiciones, entidades malignas
+                    que surgen de las emociones negativas de las personas, como el miedo y la tristeza. Estos seres
+                    ponen a la humanidad en un estado de vulnerabilidad, ya que la mayoría no puede percibir ni
+                    comprender completamente el peligro que representan.
+                    Para combatir estas amenazas, se presentan a los hechiceros jujutsu, individuos entrenados para
+                    exorcizar maldiciones y proteger a los que no pueden defenderse. A través de un riguroso
+                    entrenamiento, estos hechiceros adquieren habilidades únicas que les permiten enfrentarse a fuerzas
+                    sobrenaturales.
+                    El protagonista, Yuji Itadori, se ve arrastrado a este mundo tras un encuentro con una maldición, lo
+                    que transforma su vida y lo lleva a convertirse en un hechicero. A medida que avanza la trama, Yuji
+                    enfrenta no solo la lucha contra las maldiciones, sino también un viaje de autodescubrimiento que le
+                    hace cuestionar su propósito y el valor de la vida en medio de la adversidad. La serie aborda temas
+                    de sacrificio, lucha interna y el deseo de proteger a los seres queridos, convirtiéndose en un
+                    relato emocionante y una profunda exploración de la condición humana.
+                    Si quieres ver la serie, aquí tienes el enlace de Crunchyroll: <a
+                        href="https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen?srsltid=AfmBOor7ZjjmiZseDx8bUhi4vcTP2it1jETDzKFJh0YpoY9Y4muVYbyC"
+                        target="_blank"> jujutsu-kaisen</a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <h1 id="titulo-cards">PERSONAJES</h1>
+        <!-- Fila para las cards -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card">
+                    <img src="./images/Satoru1.jpg" class="card-img-top" alt="Satoru Gojo" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Satoru Gojo</h5>
+                        <p class="card-text">Satoru Gojo es el hechicero más poderoso en Jujutsu Kaisen.
+                            Maestro en la técnica Infinito y portador de los Seis Ojos, Gojo puede manipular el espacio
+                            y defenderse de cualquier ataque.
+                            Aunque despreocupado y arrogante, es leal a sus alumnos y protege a los hechiceros jujutsu
+                            con todo su poder, imponiendo respeto y temor.
+                        </p>
+                        <a href="#" class="btn btn-primary">Más info</a>
+                    </div>
                 </div>
-                <div class="col-md-8 col-12">
-                    <h1>JUJUTSU KAISEN</h1>
-                    <p id="descripcion-principal">Jujutsu Kaisen es una popular serie de manga y anime japonesa creada por Gege Akutami. La historia se desarrolla en un mundo amenazado por maldiciones, entidades malignas que surgen de las emociones negativas de las personas, como el miedo y la tristeza. Estos seres ponen a la humanidad en un estado de vulnerabilidad, ya que la mayoría no puede percibir ni comprender completamente el peligro que representan.
-                        Para combatir estas amenazas, se presentan a los hechiceros jujutsu, individuos entrenados para exorcizar maldiciones y proteger a los que no pueden defenderse. A través de un riguroso entrenamiento, estos hechiceros adquieren habilidades únicas que les permiten enfrentarse a fuerzas sobrenaturales.
-                        El protagonista, Yuji Itadori, se ve arrastrado a este mundo tras un encuentro con una maldición, lo que transforma su vida y lo lleva a convertirse en un hechicero. A medida que avanza la trama, Yuji enfrenta no solo la lucha contra las maldiciones, sino también un viaje de autodescubrimiento que le hace cuestionar su propósito y el valor de la vida en medio de la adversidad. La serie aborda temas de sacrificio, lucha interna y el deseo de proteger a los seres queridos, convirtiéndose en un relato emocionante y una profunda exploración de la condición humana.
-                    </p>
+                <div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-bs-toggle="list" href="#list-home" role="tab"
+                                    aria-controls="list-home">Habilidades Principales</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-bs-toggle="list" href="#list-profile" role="tab"
+                                    aria-controls="list-profile">Técnica Infinito</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-bs-toggle="list" href="#list-messages" role="tab"
+                                    aria-controls="list-messages">Seis Ojos</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-bs-toggle="list" href="#list-settings" role="tab"
+                                    aria-controls="list-settings">Territorio</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    <h3>Habilidades Principales</h3>
+                                    <p>Satoru Gojo es el hechicero más poderoso del mundo. Sus habilidades incluyen:</p>
+                                    <ul>
+                                        <li>Técnica Infinito</li>
+                                        <li>Seis Ojos</li>
+                                        <li>Control total sobre su territorio</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    <h3>Técnica Infinito</h3>
+                                    <p>La técnica de manipulación espacial que le permite a Satoru detener cualquier
+                                        ataque, creando un campo de fuerza entre él y sus enemigos.</p>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+                                    <h3>Seis Ojos</h3>
+                                    <p>El poder visual que otorga a Satoru una percepción casi ilimitada de la energía
+                                        maldita y su entorno, permitiéndole maximizar la eficiencia en su control de
+                                        energía.</p>
+                                </div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">
+                                    <h3>Territorio Infinito</h3>
+                                    <p>Satoru puede expandir su Territorio, atrapando a sus oponentes en un espacio
+                                        donde son bombardeados con información sensorial infinita, debilitando su
+                                        voluntad y sus defensas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <h1 id="titulo-cards">PERSONAJES</h1>
-            <!-- Fila para las cards -->
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card">
-                        <img src="./images/Satoru1.jpg" class="card-img-top" alt="Satoru Gojo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Satoru Gojo</h5>
-                            <p class="card-text">Satoru Gojo es el hechicero más poderoso en Jujutsu Kaisen.
-                                Maestro en la técnica Infinito y portador de los Seis Ojos, Gojo puede manipular el espacio y defenderse de cualquier ataque.
-                                Aunque despreocupado y arrogante, es leal a sus alumnos y protege a los hechiceros jujutsu con todo su poder, imponiendo respeto y temor.
-                            </p>
-                            <a href="#" class="btn btn-primary">Más info</a>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card">
+                    <img src="./images/Toji1.jpg" class="card-img-top" alt="Toji Fushiguro" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Toji Fushiguro</h5>
+                        <p class="card-text">Toji Fushiguro es un asesino sin energía maldita, pero posee una increíble
+                            fuerza física y maneja herramientas malditas.
+                            Como antiguo miembro del clan Zenin, Toji desprecia las artes jujutsu y lucha con una
+                            brutalidad sin igual.
+                            A pesar de su ferocidad, su relación con su hijo Megumi añade complejidad a su historia y
+                            carácter en Jujutsu Kaisen.
+                        </p>
+                        <a href="#" class="btn btn-primary">Más info</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-bs-toggle="list" href="#list-home" role="tab"
+                                    aria-controls="list-home">Habilidades Principales</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-bs-toggle="list" href="#list-profile" role="tab"
+                                    aria-controls="list-profile">Cuerpo Mejorado</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-bs-toggle="list" href="#list-messages" role="tab"
+                                    aria-controls="list-messages">Manipulación de Maldiciones</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-bs-toggle="list" href="#list-settings" role="tab"
+                                    aria-controls="list-settings">Inmunidad a Maldiciones</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    <h3>Habilidades Principales</h3>
+                                    <p>Toji Fushiguro es un asesino excepcional con habilidades físicas sobresalientes y
+                                        un control experto sobre maldiciones. Sus habilidades incluyen:</p>
+                                    <ul>
+                                        <li>Cuerpo Mejorado</li>
+                                        <li>Manipulación de Maldiciones</li>
+                                        <li>Inmunidad a las Maldiciones</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    <h3>Cuerpo Mejorado</h3>
+                                    <p>A través de entrenamiento extremo, Toji tiene un cuerpo más allá de las
+                                        capacidades humanas normales, con fuerza, velocidad y reflejos superiores, lo
+                                        que lo convierte en un oponente letal en combate.</p>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+                                    <h3>Manipulación de Maldiciones</h3>
+                                    <p>A pesar de no poseer energía maldita propia, Toji utiliza herramientas malditas y
+                                        maldiciones almacenadas, permitiéndole luchar contra hechiceros poderosos.</p>
+                                </div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">
+                                    <h3>Inmunidad a Maldiciones</h3>
+                                    <p>Toji es completamente inmune a las maldiciones, lo que significa que no puede ser
+                                        detectado por hechiceros ni afectado directamente por maldiciones.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card">
-                        <img src="./images/Toji1.jpg" class="card-img-top" alt="Toji Fushiguro" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Toji Fushiguro</h5>
-                            <p class="card-text">Toji Fushiguro es un asesino sin energía maldita, pero posee una increíble fuerza física y maneja herramientas malditas.
-                                Como antiguo miembro del clan Zenin, Toji desprecia las artes jujutsu y lucha con una brutalidad sin igual.
-                                A pesar de su ferocidad, su relación con su hijo Megumi añade complejidad a su historia y carácter en Jujutsu Kaisen.
-                            </p>
-                            <a href="#" class="btn btn-primary">Más info</a>
-                        </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mb-4">
+                <div class="card">
+                    <img src="./images/Suguru1.jpg" class="card-img-top" alt="Suguru Geto" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Suguru Geto</h5>
+                        <p class="card-text">Suguru Geto es un hechicero convertido en villano. Antes amigo de Satoru
+                            Gojo,
+                            Geto desarrolló una ideología que considera a los humanos sin poderes como inferiores.
+                            Tiene la habilidad de absorber maldiciones y utilizarlas a su favor.
+                            Lidera una rebelión contra los hechiceros jujutsu, convencido de que su manera de ver el
+                            mundo es la
+                            verdadera.
+                        </p>
+                        <a href="#" class="btn btn-primary">Más info</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card">
-                        <img src="./images/Suguru1.jpg" class="card-img-top" alt="Suguru Geto" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Suguru Geto</h5>
-                            <p class="card-text">Suguru Geto es un hechicero convertido en villano. Antes amigo de Satoru Gojo,
-                                Geto desarrolló una ideología que considera a los humanos sin poderes como inferiores.
-                                Tiene la habilidad de absorber maldiciones y utilizarlas a su favor.
-                                Lidera una rebelión contra los hechiceros jujutsu, convencido de que su visión es la verdadera, y enfrentando a sus antiguos amigos.
-                            </p>
-                            <a href="#" class="btn btn-primary">Más info</a>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Habilidades
+                                Principales</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab"
+                                aria-controls="list-profile">Control de Maldiciones</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab"
+                                aria-controls="list-messages">Absorción de Maldiciones</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                data-bs-toggle="list" href="#list-settings" role="tab"
+                                aria-controls="list-settings">Técnicas de Maldición Masiva</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <h3>Habilidades Principales</h3>
+                                <p>Suguru Geto es un hechicero de clase especial y maestro en el uso de maldiciones. Sus
+                                    habilidades incluyen:</p>
+                                <ul>
+                                    <li>Control de Maldiciones</li>
+                                    <li>Absorción de Maldiciones</li>
+                                    <li>Técnicas de Maldición Masiva</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list">
+                                <h3>Control de Maldiciones</h3>
+                                <p>Suguru puede controlar maldiciones, usándolas para atacar a sus enemigos o
+                                    protegerse, y siempre tiene varias maldiciones bajo su mando.</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">
+                                <h3>Absorción de Maldiciones</h3>
+                                <p>Geto tiene la capacidad de absorber maldiciones derrotadas y agregarlas a su arsenal,
+                                    haciéndose más poderoso con cada batalla.</p>
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">
+                                <h3>Técnicas de Maldición Masiva</h3>
+                                <p>Con su habilidad para controlar maldiciones a gran escala, Geto puede invocar
+                                    múltiples maldiciones simultáneamente, abrumando a sus enemigos en combate.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <!-- Formulario de suscripción -->
+    <h2 id="titulo-cards">SUSCRIBETE</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Dirreción de Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
